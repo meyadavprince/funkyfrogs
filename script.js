@@ -1,10 +1,17 @@
-const addToCartButton = document.querySelector("button");
+const cards = document.querySelectorAll(".product-card");
 
-if (addToCartButton) {
-  addToCartButton.addEventListener("click", () => {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push("Funky Tee");
-    localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Added to cart 🛒");
-  });
-}
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+        entry.target.style.transform = "translateY(0)";
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+cards.forEach((card) => {
+  observer.observe(card);
+});
