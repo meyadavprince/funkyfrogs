@@ -1,79 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="images/logo/favicon.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Funkyfrog</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkyfrog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <div class="logo">
-  <img src="images/logo/logo.png" alt="FunkyFrogs Logo">
-</div>
-    <ul class="nav-links">
-      <li>Home</li>
-      <li>Products</li>
-      <li>About</li>
-      <li>Cart</li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="FunkyFrogs Logo">
+        </div>
+       <ul class="nav-links">
+  <li>Home</li>
+  <li>Products</li>
+  <li>About</li>
+   <li class="cart-icon">
+  <a href="cart.html">
+    <img src="images/Icon/cart.ico" alt="Cart">
+    <span class="cart-badge" id="cartBadge">1</span>
+  </a>
+</li>
+</ul>
 
-  <header class="hero">
-   <h1>FunkyFrogs</h1>
-    <p>Where fun meets fashion</p>
-    <button>Shop Now</button>
-  </header>
-<section class="products">
-  <h2>Our Products</h2>
+    </nav>
 
-  <div class="product-grid">
+    <header class="hero">
+        <h1>FunkyFrogs</h1>
+        <p>Where fun meets fashion</p>
+        <button>Shop Now</button>
+    </header>
 
-<a href="category-tshirts.html" class="product-card">
-  <img src="images/funky-tee.png" alt="T-Shirts">
-  <h3>T-Shirts</h3>
-</a>
+    <section class="products">
+        <div class="products-container">
+
+            <h2>Our Products</h2>
+
+            <div class="category-header">
+                <button class="category-tab active" data-category="tshirts">T-Shirts</button>
+                <button class="category-tab" data-category="hoodies">Hoodies</button>
+                <button class="category-tab" data-category="crocs">Crocs</button>
+                <button class="category-tab" data-category="caps">Caps</button>
+                <button class="category-tab" data-category="toys">Toys</button>
+            </div>
 
 
-    <a href="product.html" class="product-card">
-      <img src="images/cool-hoodie.png" alt="Hoodies">
-      <h3>Hoodies</h3>
-     </a>
+            <!-- ✅ ONE product grid ONLY -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products injected by JS -->
+            </div>
 
-    <a href="product.html" class="product-card">
-      <img src="images/street-cap.png" alt="Street Cap">
-      <h3>Street Cap</h3>
-     </a>
-        <a href="product.html" class="product-card">
-      <img src="images/funky-tee.png" alt="Snowsuits ">
-      <h3>Snowsuits</h3>
-    </a>
+            <div class="see-more-wrapper">
+                <a id="seeMoreLink" href="#">See more</a>
+            </div>
 
-    <a href="product.html" class="product-card">
-      <img src="images/cool-hoodie.png" alt="Swimsuits">
-      <h3>Swimsuits</h3>
-     </a>
+        </div>
+    </section>
 
-    <a href="product.html" class="product-card">
-      <img src="images/street-cap.png" alt="Caps">
-      <h3>Caps</h3>
-     </a>
-         <a href="product.html" class="product-card">
-      <img src="images/funky-tee.png" alt="Socks">
-      <h3>Sweaters</h3>
-    </a>
-
-    <a href="product.html" class="product-card">
-      <img src="images/cool-hoodie.png" alt="Night suits">
-      <h3>Night Suits</h3>
-     </a>
-
-  </div>
-</section>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-
