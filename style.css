@@ -552,3 +552,158 @@ button:hover {
 .cart-badge.pop {
   animation: badgePop 0.35s ease;
 }
+/* =======================
+   SEE MORE BUTTON
+======================= */
+
+.see-more-wrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.see-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 28px;
+  border: 1.5px solid black;
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+
+  text-decoration: none;
+  color: black;
+  background: transparent;
+
+  transition: all 0.3s ease;
+}
+
+.see-more-btn .arrow {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.see-more-btn:hover {
+  background: black;
+  color: white;
+}
+
+.see-more-btn:hover .arrow {
+  transform: translateX(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
