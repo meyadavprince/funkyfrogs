@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "hoodie-8", name: "Soft Hoodie", price: "₹1899", img: "images/Hoodies/Game-on.png", sizes: ["3-4", "5-6", "7-8"] }
     ],
 
-   crocs: [
+    crocs: [
       { id: "crocs-1", name: "Charming Pastel", price: "₹499", img: "images/Croces/charming Pastel.png", sizes: ["2", "3", "4"] },
       { id: "crocs-2", name: "Colourful playful", price: "₹599", img: "images/Croces/colourful playful.png", sizes: ["2", "3", "4"] },
       { id: "crocs-3", name: "Fuzzy charm", price: "₹399", img: "images/Croces/Fuzzy charm.png", sizes: ["2", "3", "4"] },
@@ -69,15 +69,16 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "crocs-7", name: "Stylish Crocs", price: "₹599", img: "images/Croces/Stylish Crocs.png", sizes: ["2", "3", "4"] },
       { id: "crocs-8", name: "White with colourful charms", price: "₹399", img: "images/Croces/white with colourful charms.png", sizes: ["2", "3", "4"] }
     ],
+
     caps: [
-      { id: "cap-1", name: "beaded Pastel Cap", price: "₹599", img: "images/caps/beaded Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-1", name: "Beaded Pastel Cap", price: "₹599", img: "images/caps/beaded Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
       { id: "cap-2", name: "Bear embroidery cap", price: "₹699", img: "images/caps/Bear embroidery cap.png", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-3", name: "butterfly Lavender cap", price: "₹649", img: "images/caps/butterfly Lavender  cap.png", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-4", name: "checkered Pastel  cap", price: "₹549", img: "images/caps/checkered Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-5", name: "colourful playful cap", price: "₹599", img: "images/caps/colourful playful cap.png", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-6", name: "corduroy Beige  cap", price: "₹699", img: "images/caps/corduroy Beige  cap.png", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-7", name: "flame embroidery cap", price: "₹579", img: "images/caps/flame embroidery cap.png", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-8", name: "Teddy bear cap", price: "₹729", img: "images/caps/Teddy bear cap.png", sizes: ["3-4", "5-6", "7-8"] }
+      { id: "cap-3", name: "Butterfly Lavender cap", price: "₹649", img: "images/caps/butterfly Lavender  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-4", name: "Checkered Pastel  cap", price: "₹549", img: "images/caps/checkered Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-5", name: "Colourful playful cap", price: "₹599", img: "images/caps/colourful playful cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-6", name: "Corduroy Beige  cap", price: "₹699", img: "images/caps/corduroy Beige  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-7", name: "Flame embroidery cap", price: "₹279", img: "images/caps/flame embroidery cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-8", name: "Teddy bear cap", price: "₹349", img: "images/caps/Teddy bear cap.png", sizes: ["3-4", "5-6", "7-8"] }
     ],
 
     toys: [
@@ -178,33 +179,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const genderRadios = document.querySelectorAll('input[name="gender"]');
     const categoryCheckboxes = document.querySelectorAll('.filter-section input[type="checkbox"]');
     const clearFiltersBtn = document.getElementById("clearFilters");
-  function applySidebarFilters() {
-  let filtered = [...items];
+    function applySidebarFilters() {
+      let filtered = [...items];
 
-  // CATEGORY FILTER
-  const selectedCategories = Array.from(categoryCheckboxes)
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
+      // CATEGORY FILTER
+      const selectedCategories = Array.from(categoryCheckboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
 
-  if (selectedCategories.length) {
-    filtered = filtered.filter(item =>
-      selectedCategories.includes(item.category)
+      if (selectedCategories.length) {
+        filtered = filtered.filter(item =>
+          selectedCategories.includes(item.category)
+        );
+      }
+
+      renderCategory(filtered);
+    }
+    categoryCheckboxes.forEach(cb =>
+      cb.addEventListener("change", applySidebarFilters)
     );
-  }
 
-  renderCategory(filtered);
-}
-categoryCheckboxes.forEach(cb =>
-  cb.addEventListener("change", applySidebarFilters)
-);
-
-if (clearFiltersBtn) {
-  clearFiltersBtn.addEventListener("click", () => {
-    categoryCheckboxes.forEach(cb => cb.checked = false);
-    genderRadios.forEach(r => r.checked = false);
-    renderCategory(items);
-  });
-}
+    if (clearFiltersBtn) {
+      clearFiltersBtn.addEventListener("click", () => {
+        categoryCheckboxes.forEach(cb => cb.checked = false);
+        genderRadios.forEach(r => r.checked = false);
+        renderCategory(items);
+      });
+    }
 
     renderCategory(items);
 
@@ -324,6 +325,14 @@ if (clearFiltersBtn) {
         console.log("Cart updated:", cart);
       };
     }
+    /* =======================
+       BREADCRUMB
+    ======================= */
+    const breadcrumb = document.getElementById("productBreadcrumb");
+    if (breadcrumb && foundProduct) {
+      breadcrumb.querySelector(".current").textContent = foundProduct.name;
+    }
+
 
     // SIMILAR PRODUCTS
     const similarGrid = document.getElementById("similarProducts");
@@ -583,6 +592,62 @@ function updateMobileCartCount() {
 }
 
 updateMobileCartCount();
+// =======================
+// NAVBAR ACTIVE LINK (ALL PAGES - FINAL FIX)
+// =======================
 
+const path = window.location.pathname.split("/").pop() || "index.html";
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  const href = link.getAttribute("href");
+
+  if (!href) return;
+
+  // HOME
+  if (path === "index.html" && href === "index.html") {
+    link.classList.add("active");
+  }
+
+  // ABOUT
+  if (path === "about.html" && href === "about.html") {
+    link.classList.add("active");
+  }
+
+  // CART (🔥 THIS IS THE FIX)
+  if (path === "cart.html" && href === "cart.html") {
+    link.classList.add("active");
+  }
+
+  // CATEGORY PAGE (shop)
+  if (
+    path === "category.html" &&
+    href.startsWith("category.html")
+  ) {
+    link.classList.add("active");
+  }
+
+  // PRODUCT PAGE → SHOP ACTIVE
+  if (
+    path === "product.html" &&
+    href.startsWith("category.html")
+  ) {
+    link.classList.add("active");
+  }
+});
+
+// =======================
+// NAVBAR SCROLL EFFECT (A)
+// =======================
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  if (!navbar) return;
+
+  if (window.scrollY > 10) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
 
 
