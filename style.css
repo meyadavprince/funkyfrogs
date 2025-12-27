@@ -62,11 +62,77 @@ body {
 }
 
 /* =======================
+   NAVBAR SCROLL
+======================= */
+
+.navbar {
+  transition: height 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* When scrolled */
+.navbar.scrolled {
+  height: 70px;
+  /* slightly smaller */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =======================
+   LOGO RESIZE ON SCROLL
+======================= */
+
+.logo img {
+  height: 104px;
+  transition: height 0.3s ease;
+}
+
+/* When navbar is scrolled */
+.navbar.scrolled .logo img {
+  height: 72px;
+  /* reduced size to fit shrunk navbar */
+}
+
+
+
+
+/* =======================
+   GLOBAL LINK STYLE (ALL PAGES)
+======================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-links a {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.nav-links a.active {
+  font-weight: 600;
+}
+
+.nav-links a.active {
+  font-weight: 600;
+  position: relative;
+}
+
+
+
+/* =======================
    HERO
 ======================= */
 .hero {
   position: relative;
-  height: calc(100vh - 100px); /* ends before “Our Products” */
+  height: calc(100vh - 100px);
+  /* ends before “Our Products” */
   padding-top: 40px;
 
   display: flex;
@@ -75,7 +141,8 @@ body {
   align-items: center;
   text-align: center;
 
-  background-image: url("images/Icon/home-bg.png"); /* 👈 your image path */
+  background-image: url("images/Icon/home-bg.png");
+  /* 👈 your image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,7 +152,8 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35); /* transparency level */
+  background: rgba(0, 0, 0, 0.35);
+  /* transparency level */
   z-index: 1;
 }
 
@@ -188,13 +256,17 @@ button:hover {
    PRODUCT DETAIL PAGE
 ======================= */
 .product-detail {
-  max-width: 1100px; /* 🔥 slightly narrower */
-  margin: 60px auto 80px; /* 🔥 less vertical space */
+  max-width: 1100px;
+  /* 🔥 slightly narrower */
+  margin: 60px auto 80px;
+  /* 🔥 less vertical space */
   padding: 0 50px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 🔥 balanced */
-  gap: 70px; /* 🔥 reduced gap */
+  grid-template-columns: 1fr 1fr;
+  /* 🔥 balanced */
+  gap: 70px;
+  /* 🔥 reduced gap */
 }
 
 
@@ -205,7 +277,8 @@ button:hover {
 
 .product-media img {
   width: 100%;
-  max-height: 440px; /* 🔥 reduced */
+  max-height: 440px;
+  /* 🔥 reduced */
   object-fit: cover;
   border-radius: 16px;
 }
@@ -238,6 +311,7 @@ button:hover {
   max-width: 420px;
   margin-bottom: 40px;
 }
+
 .add-to-cart {
   padding: 16px 0;
   width: 100%;
@@ -279,9 +353,11 @@ button:hover {
   font-size: 0.85rem;
   transition: all 0.2s ease;
 }
+
 .size-btn:hover {
   border-color: black;
 }
+
 .size-btn.active {
   background: #097e26;
   /* 🔥 selected size */
@@ -303,7 +379,7 @@ button:hover {
 /* =======================
    🔥 FIX SIMILAR PRODUCTS GAP
 ======================= */
-.product-detail + .products {
+.product-detail+.products {
   padding-top: 60px;
   border-top: 1px solid #eee;
 }
@@ -554,6 +630,7 @@ button:hover {
 .cart-badge.pop {
   animation: badgePop 0.35s ease;
 }
+
 /* =======================
    SEE MORE BUTTON
 ======================= */
@@ -597,6 +674,7 @@ button:hover {
 .see-more-btn:hover .arrow {
   transform: translateX(4px);
 }
+
 /* =======================
    PRODUCT IMAGE GALLERY
 ======================= */
@@ -716,6 +794,7 @@ button:hover {
   color: black;
   border: 1.5px solid black;
 }
+
 /* =======================
    CATEGORY LAYOUT
 ======================= */
@@ -774,6 +853,7 @@ button:hover {
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 /* =======================
    FOOTER
 ======================= */
@@ -842,6 +922,7 @@ button:hover {
     margin: auto;
   }
 }
+
 /* =======================
    FOOTER NEWSLETTER
 ======================= */
@@ -891,6 +972,7 @@ button:hover {
   font-size: 0.75rem;
   color: green;
 }
+
 /* =======================
    FOOTER SOCIAL ICONS
 ======================= */
@@ -931,6 +1013,7 @@ button:hover {
 .social-icons a:hover svg {
   fill: white;
 }
+
 /* =======================
    MOBILE STICKY BAR
 ======================= */
@@ -1079,120 +1162,75 @@ button:hover {
 ======================= */
 
 .brand-address {
-  font-style: normal; /* remove default italic */
+  font-style: normal;
+  /* remove default italic */
   font-size: 0.8rem;
   color: #ffffff;
   line-height: 1.6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* =======================
+   ABOUT PAGE
+======================= */
+
+.about-hero {
+  padding: 140px 20px 80px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.about-page {
+  padding: 80px 20px;
+}
+
+.about-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-block {
+  margin-bottom: 50px;
+}
+
+.about-block h2 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+}
+
+.about-block p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.about-values {
+  list-style: none;
+  padding: 0;
+}
+
+.about-values li {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .about-page {
+    padding: 60px 16px;
+  }
+}
