@@ -2,198 +2,204 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product | FunkyFrogs</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product | FunkyFrogs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo/logo.png" alt="FunkyFrogs">
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li>Contact us</li>
-            <li>About</li>
-            <li class="cart-icon">
-                <a href="cart.html">
-                    <img src="images/Icon/cart.ico" alt="Cart">
-                    <span class="cart-badge" id="cartBadge">1</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <section class="product-detail">
-
-        <div class="product-media">
-            <img id="mainProductImage" src="" alt="">
-
-            <div class="product-thumbnails" id="productThumbnails">
-                <!-- thumbnails injected by JS -->
-            </div>
-        </div>
-
-        <div class="product-info">
-            <span class="product-label">PRODUCT</span>
-            <h1></h1>
-            <p class="price"></p>
-            <div class="rating">
-                <div class="stars">
-                    ★★★★☆
-                </div>
-                <span class="rating-text">4.6 · 128 reviews</span>
-            </div>
-
-
-            <p class="desc"></p>
-
-            <div class="size-selector">
-                <p>Select Size</p>
-                <div class="sizes" id="sizeOptions"></div>
-            </div>
-
-            <div class="product-actions">
-  <button class="buy-now">Buy Now</button>
-  <button class="add-to-cart">Add to Cart</button>
-</div>
-
-
-
-            <p class="desc"></p>
-        </div>
-
-    </section>
-
-    <section class="products">
-        <div class="products-container">
-            <h2>Similar Products</h2>
-            <div class="product-grid" id="similarProducts"></div>
-        </div>
-    </section>
-    <section class="product-reviews">
-        <h2>Customer Reviews</h2>
-
-        <div class="review">
-            <div class="review-header">
-                <strong>Rahul</strong>
-                <span>★★★★★</span>
-            </div>
-            <p>Great quality and fits perfectly. My kid loved it!</p>
-        </div>
-
-        <div class="review">
-            <div class="review-header">
-                <strong>Ananya</strong>
-                <span>★★★★☆</span>
-            </div>
-            <p>Nice fabric and fast delivery. Will buy again.</p>
-        </div>
-    </section>
-
-
-    <!-- MOBILE STICKY BAR -->
-<div class="mobile-bar">
-  <a href="cart.html" class="mobile-cart">
-    <img src="images/Icon/cart.ico" alt="Cart">
-    <span class="mobile-cart-count" id="mobileCartCount">0</span>
-  </a>
-
-  <a href="cart.html" class="mobile-checkout">
-    View Cart
-  </a>
-</div>
-
-
-
-    <script src="script.js"></script>
-    <footer class="site-footer">
-  <div class="footer-container">
-
-    <!-- BRAND -->
-    <div class="footer-brand">
-      <img src="images/logo/logo.png" alt="FunkyFrogs">
-      <p>Fun, comfy & funky fashion for everyone.</p>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/Icon/logo/logo.png" alt="FunkyFrogs">
+      </a>
     </div>
 
-    <!-- LINKS -->
-    <div class="footer-links">
-      <h4>Shop</h4>
-      <a href="index.html">Home</a>
-      <a href="category.html?type=tshirts">T-Shirts</a>
-      <a href="category.html?type=hoodies">Hoodies</a>
-      <a href="category.html?type=caps">Caps</a>
+
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="category.html?type=tshirts">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="cart-icon">
+        <a href="cart.html">
+          <img src="images/Icon/cart.ico" alt="Cart">
+          <span class="cart-badge" id="cartBadge">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <section class="product-detail">
+
+    <div class="product-media">
+      <img id="mainProductImage" src="" alt="">
+
+      <div class="product-thumbnails" id="productThumbnails">
+        <!-- thumbnails injected by JS -->
+      </div>
     </div>
 
-    <div class="footer-links">
-      <h4>Help</h4>
-      <a href="#">Shipping</a>
-      <a href="#">Returns</a>
-      <a href="#">FAQs</a>
-      <a href="#">Contact Us</a>
+    <div class="product-info">
+      <span class="product-label">PRODUCT</span>
+      <h1></h1>
+      <p class="price"></p>
+      <div class="rating">
+        <div class="stars">
+          ★★★★☆
+        </div>
+        <span class="rating-text">4.6 · 128 reviews</span>
+      </div>
+
+
+      <p class="desc"></p>
+
+      <div class="size-selector">
+        <p>Select Size</p>
+        <div class="sizes" id="sizeOptions"></div>
+      </div>
+
+      <div class="product-actions">
+        <button class="buy-now">Buy Now</button>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+
+
+      <p class="desc"></p>
     </div>
 
-    <!-- SOCIAL -->
-    <div class="footer-social">
-  <h4>Follow</h4>
+  </section>
 
-  <div class="social-icons">
-    <!-- Instagram -->
-    <a href="#" aria-label="Instagram">
-      <svg viewBox="0 0 24 24">
-        <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.4A2.9 2.9 0 1 1 14.9 12 2.9 2.9 0 0 1 12 14.9zM17.8 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
-      </svg>
+  <section class="products">
+    <div class="products-container">
+      <h2>Similar Products</h2>
+      <div class="product-grid" id="similarProducts"></div>
+    </div>
+  </section>
+  <section class="product-reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+      <div class="review-header">
+        <strong>Rahul</strong>
+        <span>★★★★★</span>
+      </div>
+      <p>Great quality and fits perfectly. My kid loved it!</p>
+    </div>
+
+    <div class="review">
+      <div class="review-header">
+        <strong>Ananya</strong>
+        <span>★★★★☆</span>
+      </div>
+      <p>Nice fabric and fast delivery. Will buy again.</p>
+    </div>
+  </section>
+
+
+  <!-- MOBILE STICKY BAR -->
+  <div class="mobile-bar">
+    <a href="cart.html" class="mobile-cart">
+      <img src="images/Icon/cart.ico" alt="Cart">
+      <span class="mobile-cart-count" id="mobileCartCount">0</span>
     </a>
 
-    <!-- Facebook -->
-    <a href="#" aria-label="Facebook">
-      <svg viewBox="0 0 24 24">
-        <path d="M13 22V12h3l1-4h-4V6c0-1.1.3-2 2-2h2V0h-3c-3 0-5 1.8-5 5v3H6v4h3v10z"/>
-      </svg>
-    </a>
-
-    <!-- Twitter / X -->
-    <a href="#" aria-label="Twitter">
-      <svg viewBox="0 0 24 24">
-        <path d="M22 5.9c-.8.4-1.6.6-2.5.8a4.3 4.3 0 0 0 1.9-2.4 8.6 8.6 0 0 1-2.7 1 4.3 4.3 0 0 0-7.3 3.9A12.2 12.2 0 0 1 3 4.8a4.3 4.3 0 0 0 1.3 5.7 4.2 4.2 0 0 1-1.9-.5v.1a4.3 4.3 0 0 0 3.4 4.2 4.4 4.4 0 0 1-1.9.1 4.3 4.3 0 0 0 4 3A8.6 8.6 0 0 1 2 19.5a12.1 12.1 0 0 0 6.6 1.9c8 0 12.4-6.6 12.4-12.4v-.6A8.8 8.8 0 0 0 22 5.9z"/>
-      </svg>
+    <a href="cart.html" class="mobile-checkout">
+      View Cart
     </a>
   </div>
-</div>
 
 
-  </div>
 
-   <div class="footer-bottom-bar">
-   <!-- LEFT SIDE -->
-  <div class="footer-left">
-    <span class="copyright">
-      © 2025 FunkyFrogs | All rights reserved
-    </span>
+  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="footer-container">
 
-    <nav class="footer-legal-inline">
-      <a href="#">Privacy Policy</a>
-      <span>·</span>
-      <a href="#">Terms of Service</a>
-      <span>·</span>
-      <a href="#">Refund Policy</a>
-    </nav>
-  </div>
+      <!-- BRAND -->
+      <div class="footer-brand">
+        <img src="images/Icon/logo/logo.png" alt="FunkyFrogs">
+        <p>Fun, comfy & funky fashion for everyone.</p>
+      </div>
 
-  <!-- RIGHT SIDE -->
-  <div class="payment-icons">
-    <img src="images/payments/visa.png" alt="Visa" loading="lazy" title="Visa">
-    <img src="images/payments/mastercard.png" alt="Mastercard" loading="lazy" title="Mastercard">
-    <img src="images/payments/rupay.png" alt="RuPay" loading="lazy" title="RuPay">
-    <img src="images/payments/upi.png" alt="UPI" loading="lazy" title="UPI">
-  </div>
-</div>
-</footer>
+      <!-- LINKS -->
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="index.html">Home</a>
+        <a href="category.html?type=tshirts">T-Shirts</a>
+        <a href="category.html?type=hoodies">Hoodies</a>
+        <a href="category.html?type=caps">Caps</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Help</h4>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="footer-social">
+        <h4>Follow</h4>
+
+        <div class="social-icons">
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm0 7.4A2.9 2.9 0 1 1 14.9 12 2.9 2.9 0 0 1 12 14.9zM17.8 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+            </svg>
+          </a>
+
+          <!-- Facebook -->
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M13 22V12h3l1-4h-4V6c0-1.1.3-2 2-2h2V0h-3c-3 0-5 1.8-5 5v3H6v4h3v10z" />
+            </svg>
+          </a>
+
+          <!-- Twitter / X -->
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 5.9c-.8.4-1.6.6-2.5.8a4.3 4.3 0 0 0 1.9-2.4 8.6 8.6 0 0 1-2.7 1 4.3 4.3 0 0 0-7.3 3.9A12.2 12.2 0 0 1 3 4.8a4.3 4.3 0 0 0 1.3 5.7 4.2 4.2 0 0 1-1.9-.5v.1a4.3 4.3 0 0 0 3.4 4.2 4.4 4.4 0 0 1-1.9.1 4.3 4.3 0 0 0 4 3A8.6 8.6 0 0 1 2 19.5a12.1 12.1 0 0 0 6.6 1.9c8 0 12.4-6.6 12.4-12.4v-.6A8.8 8.8 0 0 0 22 5.9z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="footer-bottom-bar">
+      <!-- LEFT SIDE -->
+      <div class="footer-left">
+        <span class="copyright">
+          © 2025 FunkyFrogs | All rights reserved
+        </span>
+
+        <nav class="footer-legal-inline">
+          <a href="#">Privacy Policy</a>
+          <span>·</span>
+          <a href="#">Terms of Service</a>
+          <span>·</span>
+          <a href="#">Refund Policy</a>
+        </nav>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="payment-icons">
+        <img src="images/Icon/payments/visa.png" alt="Visa" loading="lazy" title="Visa">
+        <img src="images/Icon/payments/mastercard.png" alt="Mastercard" loading="lazy" title="Mastercard">
+        <img src="images/Icon/payments/rupay.png" alt="RuPay" loading="lazy" title="RuPay">
+        <img src="images/Icon/payments/upi.png" alt="UPI" loading="lazy" title="UPI">
+      </div>
+    </div>
+  </footer>
 
 </body>
 
