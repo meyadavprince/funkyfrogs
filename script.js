@@ -71,14 +71,14 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
 
     caps: [
-      { id: "cap-1", name: "Street Cap", price: "₹599", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-2", name: "Classic Cap", price: "₹699", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-3", name: "Black Cap", price: "₹649", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-4", name: "Daily Cap", price: "₹549", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-5", name: "Minimal Cap", price: "₹599", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-6", name: "Urban Cap", price: "₹699", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-7", name: "Soft Cap", price: "₹579", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "cap-8", name: "Flex Cap", price: "₹729", img: "images/caps/street-cap.jpg", sizes: ["3-4", "5-6", "7-8"] }
+      { id: "cap-1", name: "beaded Pastel Cap", price: "₹599", img: "images/caps/beaded Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-2", name: "Bear embroidery cap", price: "₹699", img: "images/caps/Bear embroidery cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-3", name: "butterfly Lavender cap", price: "₹649", img: "images/caps/butterfly Lavender  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-4", name: "checkered Pastel  cap", price: "₹549", img: "images/caps/checkered Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-5", name: "colourful playful cap", price: "₹599", img: "images/caps/colourful playful cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-6", name: "corduroy Beige  cap", price: "₹699", img: "images/caps/corduroy Beige  cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-7", name: "flame embroidery cap", price: "₹579", img: "images/caps/flame embroidery cap.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "cap-8", name: "Teddy bear cap", price: "₹729", img: "images/caps/Teddy bear cap.png", sizes: ["3-4", "5-6", "7-8"] }
     ],
 
     toys: [
@@ -584,4 +584,5 @@ function updateMobileCartCount() {
 }
 
 updateMobileCartCount();
+
 
