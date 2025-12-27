@@ -59,17 +59,16 @@ document.addEventListener("DOMContentLoaded", () => {
       { id: "hoodie-8", name: "Soft Hoodie", price: "₹1899", img: "images/Hoodies/Game-on.png", sizes: ["3-4", "5-6", "7-8"] }
     ],
 
-    crocs: [
-      { id: "crocs-1", name: "Blue Crocs", price: "₹499", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-2", name: "Black Crocs", price: "₹599", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-3", name: "White Crocs", price: "₹399", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-4", name: "Street Crocs", price: "₹699", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-5", name: "Daily Crocs", price: "₹299", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-6", name: "Minimal Crocs", price: "₹499", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-7", name: "Urban Crocs", price: "₹599", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] },
-      { id: "crocs-8", name: "Soft Crocs", price: "₹399", img: "images/Croces/crocs.jpg", sizes: ["2", "3", "4"] }
+   crocs: [
+      { id: "crocs-1", name: "Charming Pastel", price: "₹499", img: "images/Croces/charming Pastel.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-2", name: "Colourful playful", price: "₹599", img: "images/Croces/colourful playful.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-3", name: "Fuzzy charm", price: "₹399", img: "images/Croces/Fuzzy charm.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-4", name: "Lavender charms", price: "₹699", img: "images/Croces/lavender charms.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-5", name: "Rainbow playful", price: "₹299", img: "images/Croces/rainbow playful.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-6", name: "Rangin blue", price: "₹499", img: "images/Croces/Rangin  blue.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-7", name: "Stylish Crocs", price: "₹599", img: "images/Croces/Stylish Crocs.png", sizes: ["2", "3", "4"] },
+      { id: "crocs-8", name: "White with colourful charms", price: "₹399", img: "images/Croces/white with colourful charms.png", sizes: ["2", "3", "4"] }
     ],
-
     caps: [
       { id: "cap-1", name: "beaded Pastel Cap", price: "₹599", img: "images/caps/beaded Pastel  cap.png", sizes: ["3-4", "5-6", "7-8"] },
       { id: "cap-2", name: "Bear embroidery cap", price: "₹699", img: "images/caps/Bear embroidery cap.png", sizes: ["3-4", "5-6", "7-8"] },
@@ -82,14 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
     ],
 
     toys: [
-      { id: "toy-1", name: "Frog Toy", price: "₹399", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-2", name: "Jump Frog", price: "₹449", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-3", name: "Soft Frog", price: "₹499", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-4", name: "Mini Frog", price: "₹349", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-5", name: "Toy Set", price: "₹599", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-6", name: "Funky Frog", price: "₹399", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-7", name: "Cute Frog", price: "₹429", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] },
-      { id: "toy-8", name: "Happy Frog", price: "₹459", img: "images/Toys/toys.jpg", sizes: ["3-4", "5-6", "7-8"] }
+      { id: "toy-1", name: "Bunny fidget spinner", price: "₹299", img: "images/Toys/bunny fidget spinner with poppers.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-2", name: "Toy camera", price: "₹149", img: "images/Toys/Cute pastel toy camera.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-3", name: "Dinosaur race track setup", price: "₹499", img: "images/Toys/Dinosaur race track adventure setup.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-4", name: "Ice cream cart", price: "₹149", img: "images/Toys/Ice cream cart.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-5", name: "Rainbow pop-it", price: "₹99", img: "images/Toys/Rainbow pop-it.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-6", name: "Robot trio", price: "₹149", img: "images/Toys/robot trio on display.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-7", name: "kitchen sink setup", price: "₹399", img: "images/Toys/toy kitchen sink setup.png", sizes: ["3-4", "5-6", "7-8"] },
+      { id: "toy-8", name: "Firefighter toy set", price: "₹459", img: "images/Toys/Firefighter toy set.png", sizes: ["3-4", "5-6", "7-8"] }
     ],
   };
 
@@ -584,5 +583,6 @@ function updateMobileCartCount() {
 }
 
 updateMobileCartCount();
+
 
 
