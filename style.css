@@ -1,3 +1,24 @@
+/* =======================
+   GLOBAL MOBILE FIXES
+======================= */
+
+* {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -59,6 +80,25 @@ body {
 .nav-links li {
   font-size: 0.9rem;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 12px 16px;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    font-size: 0.85rem;
+  }
+
+  .cart-icon img {
+    width: 22px;
+  }
 }
 
 /* =======================
@@ -177,6 +217,31 @@ a {
   line-height: 1.6;
   margin-bottom: 2.5rem;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .products {
+    padding: 60px 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
 
 /* =======================
    BUTTONS
@@ -327,6 +392,32 @@ button:hover {
 .add-to-cart:hover {
   background: #097e26;
   transform: translateY(-1px);
+}
+@media (max-width: 768px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .product-media img {
+    max-height: 360px;
+    object-fit: contain;
+  }
+
+  .product-info h1 {
+    font-size: 1.6rem;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .sizes {
+    flex-wrap: wrap;
+  }
 }
 
 /* =======================
@@ -511,6 +602,23 @@ button:hover {
 .cart-icon img:hover {
   transform: scale(1.15);
 }
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .category-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    position: relative;
+    border-right: none;
+    margin-bottom: 24px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 /* =======================
    CART PAGE (STYLE)
@@ -580,6 +688,23 @@ button:hover {
   font-size: 1.05rem;
   margin-top: 8px;
 }
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    grid-template-columns: 80px 1fr;
+    gap: 16px;
+  }
+
+  .checkout-btn {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
 
 /* =======================
    CART BADGE
@@ -1021,7 +1146,7 @@ button:hover {
 .mobile-bar {
   display: none;
 }
-
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .mobile-bar {
     position: fixed;
@@ -1145,17 +1270,17 @@ button:hover {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .footer-bottom-bar {
-    flex-direction: column;
-    gap: 10px;
+  footer {
+    padding: 60px 20px;
     text-align: center;
   }
 
-  .footer-left {
-    flex-wrap: wrap;
-    justify-content: center;
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
+
 
 /* =======================
    FOOTER ADDRESS
@@ -1223,14 +1348,420 @@ button:hover {
   color: #444;
   margin-bottom: 8px;
 }
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .about-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-team-header h2 {
+    font-size: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+/* =======================
+   ABOUT PAGE BLOCK 2^ – HERO VISUAL
+======================= */
+
+.about-hero-visual {
+  position: relative;
+  height: 360px;
+  background: linear-gradient(
+    120deg,
+    #ffd3c4 0%,
+    #ffb3b3 50%,
+    #ff9a9a 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ff6f61;
+  margin-bottom: 12px;
+}
+
+.about-hero-content p {
+  font-size: 1.05rem;
+  color: #444;
+  max-width: 520px;
+  margin: auto;
+}
+
+/* Decorative background illustration */
+.about-hero-illustration {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/about/line-art.png");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: contain;
+  opacity: 0.15;
+}
 
 /* Mobile */
 @media (max-width: 768px) {
-  .about-hero h1 {
-    font-size: 2.3rem;
+  .about-hero-visual {
+    height: 280px;
   }
 
-  .about-page {
-    padding: 60px 16px;
+  .about-hero-content h1 {
+    font-size: 2.4rem;
+  }
+}
+/* =======================
+   ABOUT PAGE – FEATURE BLOCKS
+======================= */
+
+.about-features {
+  padding: 100px 40px;
+}
+
+.about-row {
+  max-width: 1200px;
+  margin: 0 auto 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-row.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-row.reverse .about-image {
+  order: 1;
+}
+
+.about-row.reverse .about-text {
+  order: 2;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 520px;
+}
+
+.about-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2f8f46;
+  background: #e9f7ee;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.about-text p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+}
+/* =======================
+   ABOUT PAGE – TEAM SECTION
+======================= */
+
+.about-team {
+  padding: 120px 40px;
+  background: #fff;
+}
+
+.about-team-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-team-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.about-team-header p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.team-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-card {
+  background: #f6f8f6;
+  border-radius: 18px;
+  padding: 18px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* Middle card highlight */
+.team-card.highlight {
+  background: #eef5ef;
+}
+
+.team-image img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.team-number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7aa47f;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-team-header h2 {
+    font-size: 2.2rem;
+  }
+}
+/* =======================
+   ABOUT PAGE – HIGHLIGHTS
+======================= */
+
+.about-highlights {
+  background: #097e26; /* deep green */
+  padding: 70px 40px;
+}
+
+.highlights-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px 40px;
+}
+
+.highlight-item {
+  text-align: center;
+  color: #eaf1e6;
+}
+
+.highlight-label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #b7cbb2;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.highlight-item h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.highlight-item p {
+  font-size: 0.85rem;
+  color: #d6e3d1;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .highlight-item h3 {
+    font-size: 1.6rem;
+  }
+}
+/* =======================
+   ABOUT PAGE – CTA
+======================= */
+
+.about-cta {
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.about-cta-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-cta h2 {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.about-cta p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 36px;
+  background: black;
+  color: white;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+/* =======================
+   ABOUT PAGE – TESTIMONIALS
+======================= */
+
+.about-testimonials {
+  padding: 50px 40px;
+  background: #fff;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.testimonials-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.testimonials-header p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.testimonials-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.testimonial-card {
+  background: #f6f8f6;
+  border-radius: 20px;
+  padding: 32px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+}
+
+.testimonial-card.highlight {
+  background: #eef5ef;
+}
+
+.testimonial-card h4 {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2f8f46;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
   }
 }
