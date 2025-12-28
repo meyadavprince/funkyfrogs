@@ -1484,3 +1484,48 @@ button:hover {
   font-weight: 600;
   color: #2f8f46;
 }
+/* =======================
+   MOBILE FOUNDATION
+======================= */
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+/* =======================
+   MOBILE NAVBAR
+======================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    height: auto;
+    padding: 12px 16px;
+  }
+
+  .logo img {
+    height: 44px;
+  }
+
+  .nav-links {
+    gap: 16px;
+    font-size: 0.85rem;
+  }
+
+  .cart-icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+}
