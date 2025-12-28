@@ -81,25 +81,7 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .navbar {
-    height: auto;
-    padding: 12px 16px;
-  }
 
-  .logo img {
-    height: 48px;
-  }
-
-  .nav-links {
-    gap: 16px;
-    font-size: 0.85rem;
-  }
-
-  .cart-icon img {
-    width: 22px;
-  }
-}
 
 /* =======================
    NAVBAR SCROLL
@@ -216,30 +198,6 @@ a {
   color: #f7f6f6;
   line-height: 1.6;
   margin-bottom: 2.5rem;
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: auto;
-    padding: 80px 20px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 0.95rem;
-  }
-
-  .products {
-    padding: 60px 20px;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
 }
 
 
@@ -393,32 +351,6 @@ button:hover {
   background: #097e26;
   transform: translateY(-1px);
 }
-@media (max-width: 768px) {
-  .product-detail {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-    gap: 40px;
-  }
-
-  .product-media img {
-    max-height: 360px;
-    object-fit: contain;
-  }
-
-  .product-info h1 {
-    font-size: 1.6rem;
-  }
-
-  .add-to-cart {
-    width: 100%;
-    padding: 16px;
-    font-size: 1rem;
-  }
-
-  .sizes {
-    flex-wrap: wrap;
-  }
-}
 
 /* =======================
    SIZE SELECTOR
@@ -478,25 +410,6 @@ button:hover {
 .product-detail+.products h2 {
   margin-bottom: 60px;
   /* 🔥 reduce hidden gap */
-}
-
-/* =======================
-   RESPONSIVE
-======================= */
-@media (max-width: 768px) {
-  .product-detail {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 0 20px;
-  }
-
-  .product-media {
-    position: static;
-  }
-
-  .product-info h1 {
-    font-size: 2rem;
-  }
 }
 
 /* =========================
@@ -602,22 +515,6 @@ button:hover {
 .cart-icon img:hover {
   transform: scale(1.15);
 }
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  .category-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .filters {
-    position: relative;
-    border-right: none;
-    margin-bottom: 24px;
-  }
-
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 
 /* =======================
@@ -687,22 +584,6 @@ button:hover {
   font-weight: 600;
   font-size: 1.05rem;
   margin-top: 8px;
-}
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  .cart-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .cart-item {
-    grid-template-columns: 80px 1fr;
-    gap: 16px;
-  }
-
-  .checkout-btn {
-    width: 100%;
-    padding: 16px;
-  }
 }
 
 
@@ -1035,19 +916,6 @@ button:hover {
   border-top: 1px solid #eaeaea;
 }
 
-/* ===== MOBILE ===== */
-
-@media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-brand p {
-    margin: auto;
-  }
-}
-
 /* =======================
    FOOTER NEWSLETTER
 ======================= */
@@ -1140,71 +1008,6 @@ button:hover {
 }
 
 /* =======================
-   MOBILE STICKY BAR
-======================= */
-
-.mobile-bar {
-  display: none;
-}
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  .mobile-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    background: white;
-    border-top: 1px solid #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    z-index: 9999;
-  }
-
-  .mobile-cart {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  .mobile-cart img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .mobile-cart-count {
-    position: absolute;
-    top: -6px;
-    right: -8px;
-    background: black;
-    color: white;
-    font-size: 0.7rem;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mobile-checkout {
-    background: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 999px;
-    font-size: 0.85rem;
-    text-decoration: none;
-  }
-
-  /* prevent footer overlap */
-  body {
-    padding-bottom: 70px;
-  }
-}
-
-/* =======================
    FOOTER BOTTOM BAR
 ======================= */
 
@@ -1266,19 +1069,6 @@ button:hover {
   filter: grayscale(0%);
   opacity: 1;
   transform: translateY(-2px);
-}
-
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  footer {
-    padding: 60px 20px;
-    text-align: center;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
 }
 
 
@@ -1348,27 +1138,6 @@ button:hover {
   color: #444;
   margin-bottom: 8px;
 }
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  .about-row {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-team-header h2 {
-    font-size: 2rem;
-  }
-
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .highlights-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
 
 /* =======================
    ABOUT PAGE BLOCK 2^ – HERO VISUAL
@@ -1377,12 +1146,10 @@ button:hover {
 .about-hero-visual {
   position: relative;
   height: 360px;
-  background: linear-gradient(
-    120deg,
-    #ffd3c4 0%,
-    #ffb3b3 50%,
-    #ff9a9a 100%
-  );
+  background: linear-gradient(120deg,
+      #ffd3c4 0%,
+      #ffb3b3 50%,
+      #ff9a9a 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1423,16 +1190,6 @@ button:hover {
   opacity: 0.15;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .about-hero-visual {
-    height: 280px;
-  }
-
-  .about-hero-content h1 {
-    font-size: 2.4rem;
-  }
-}
 /* =======================
    ABOUT PAGE – FEATURE BLOCKS
 ======================= */
@@ -1507,18 +1264,6 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .about-row {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 80px;
-  }
-
-  .about-text {
-    max-width: 100%;
-  }
-}
 /* =======================
    ABOUT PAGE – TEAM SECTION
 ======================= */
@@ -1597,22 +1342,13 @@ button:hover {
   color: #555;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-team-header h2 {
-    font-size: 2.2rem;
-  }
-}
 /* =======================
    ABOUT PAGE – HIGHLIGHTS
 ======================= */
 
 .about-highlights {
-  background: #097e26; /* deep green */
+  background: #097e26;
+  /* deep green */
   padding: 70px 40px;
 }
 
@@ -1649,17 +1385,6 @@ button:hover {
   color: #d6e3d1;
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .highlights-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .highlight-item h3 {
-    font-size: 1.6rem;
-  }
-}
 /* =======================
    ABOUT PAGE – CTA
 ======================= */
@@ -1700,8 +1425,9 @@ button:hover {
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
+
 /* =======================
    ABOUT PAGE – TESTIMONIALS
 ======================= */
@@ -1757,11 +1483,4 @@ button:hover {
   font-size: 0.85rem;
   font-weight: 600;
   color: #2f8f46;
-}
-
-/* Mobile */
-@media (max-width: 900px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
 }
